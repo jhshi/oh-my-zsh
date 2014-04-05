@@ -4,7 +4,7 @@
 ################################################################################
 
 vim_ins_mode="%{$fg_bold[yellow]%}[INS]%{$reset_color%}"
-vim_cmd_mode="%{$fg_bold[green]%}[CMD]%{$reset_color%}"
+vim_cmd_mode="%{$fg_bold[green]%}[NOR]%{$reset_color%}"
 vim_mode=$vim_ins_mode
 
 function zle-keymap-select {
