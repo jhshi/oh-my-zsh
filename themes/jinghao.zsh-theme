@@ -1,5 +1,4 @@
 function prompt_char {
-    git status >/dev/null 2>&1 && return
     if [ $UID -eq 0 ]; then 
         echo "#"
     else 
@@ -7,8 +6,7 @@ function prompt_char {
     fi
 }
 
-local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ %s)"
-PROMPT='${ret_status}%{$fg_bold[green]%}%n@%m %{$fg[cyan]%}%~ %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%}%{$reset_color%} $(prompt_char) '
+PROMPT='%{$fg_bold[green]%}[%n@%m] %{$fg[cyan]%}${PWD/#$HOME/~}%{$reset_color%} $(prompt_char) '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
