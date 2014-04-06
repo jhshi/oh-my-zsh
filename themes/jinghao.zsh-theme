@@ -44,3 +44,14 @@ ZSH_THEME_GIT_PROMPT_PREFIX="git-branch:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
+
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg_bold[red]%}[untracked]${reset_color}"
+ZSH_THEME_GIT_PROMPT_ADDED="%{$fg_bold[green]%}[added]${reset_color}"
+ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg_bold[red]%}[modified]${reset_color}"
+ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg_bold[green]%}[renamed]${reset_color}"
+ZSH_THEME_GIT_PROMPT_DELETED="%{$fg_bold[red]%}[deleted]${reset_color}"
+ZSH_THEME_GIT_PROMPT_AHEAD="%{$fg_bold[yellow]%}[ahead]${reset_color}"
+ZSH_THEME_GIT_PROMPT_BEHIND="%{$fg_bold[red]%}[behind]${reset_color}"
+
+ZSH_THEME_GIT_PROMPT_BEHIND_REMOTE=ZSH_THEME_GIT_PROMPT_BEHIND
+ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE=ZSH_THEME_GIT_PROMPT_AHEAD
