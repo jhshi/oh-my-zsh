@@ -36,7 +36,7 @@ function TRAPINT() {
 export KEYTIMEOUT=1
 
 local ret_status="%(?:%{$fg_bold[green]%}➜${reset_color}:%{$fg_bold[red]%}➜${reset_color})"
-PROMPT='%{$fg_bold[green]%}[%n@%m]%{$reset_color%} in %{$fg_bold[cyan]%}${PWD/#$HOME/~}%{$reset_color%} ${vim_mode} ${ret_status} '
+PROMPT='%{$fg_bold[green]%}[%n@%m]%{$reset_color%} %{$fg_bold[cyan]%}${PWD/#$HOME/~}%{$reset_color%} ${vim_mode} ${ret_status} '
 
 
 ZSH_THEME_GIT_PROMPT_PREFIX="git-branch:(%{$fg[red]%}"
